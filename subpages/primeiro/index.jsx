@@ -45,7 +45,7 @@ export default function PrimeiroEscopo() {
             <div className={styles.alinhamento_cards_candidatos}>
                 {cards.map((item,index) => {
                     return (
-                        <div key={index} style={{padding:"40px"}}>
+                        <div key={index} style={{padding:"10px 40px"}}>
                             <CardComponent
                                 information={item.information}
                                 name={item.name}
