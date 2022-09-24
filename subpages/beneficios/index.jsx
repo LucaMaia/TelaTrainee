@@ -1,49 +1,37 @@
 import React from "react";
-import Image from 'next/image'
-import styles from '../../styles/Card.module.css'
 import MiniCard from "../../components/MiniCard";
+import styles from '../../styles/Beneficios.module.css'
+
+let miniCards = [
+    {"src": "/benefs/heart.svg", "label": "Cuidando de você!", "text": "Plano de Saúde", "backgroundColor":"#993399"},
+    {"src": "/benefs/food.svg", "label": "Cuidando de você!", "text": "Plano de Saúde" ,"backgroundColor":"#ff1493"},
+    {"src": "/benefs/cap.svg", "label": "Cuidando de você!", "text": "Plano de Saúde", "backgroundColor":"#00ced1"},
+    {"src": "/benefs/food.svg", "label": "Cuidando de você!", "text": "Plano de Saúde", "backgroundColor":"#00ced1"},
+    {"src": "/benefs/bag.svg", "label": "Cuidando de você!", "text": "Plano de Saúde", "backgroundColor":"#993399"},
+    {"src": "/benefs/life.svg", "label": "Cuidando de você!", "text": "Plano de Saúde", "backgroundColor":"#ff1493"},
+]
 
 export default function Beneficios() {
   return (
-    <>
-        <div style={{
-          textAlign:"center", 
-          margin:"20px auto", 
-          width:"80vw",
-          height:"800px", 
-          borderRadius:"20px", 
-          display:"flex", 
-          flexWrap:"wrap",
-          justifyContent:"center",
-          border:"1px solid red"
-          }}>
+      <div>
+          <h4 className={styles.titulo}>
+              Beneficíos
+          </h4>
+              <div className={styles.beneficios}>
+                  {miniCards.map((item,index) => {
+                      return (
+                          <div  key={index} style={{padding:"30px"}}>
+                              <MiniCard
+                                  src={item.src}
+                                  label={item.label}
+                                  text={item.text}
+                                  backgroundColor={item.backgroundColor}
+                              />
+                          </div>
+                      )
+                  })}
+              </div>
+      </div>
 
-            <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center", width:"80%"}}>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-
-
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-            </div>
-              
-              
-        </div>
-    </>
-   
   )
 }

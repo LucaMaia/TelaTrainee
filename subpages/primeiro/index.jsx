@@ -1,94 +1,87 @@
+import React from "react";
 import Image from 'next/image'
 import styles from '../../styles/Primeiro.module.css'
 
-// import ImageAvatars from '../../components/Avatar'
 import CardComponent from '../../components/Cards'
-import MiniCard from "../../components/MiniCard";
+
+import EtapasProcessoSeletivo from '../../subpages/etapasProcesso'
 
 
+let cards = [
+    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. ", "backgroundColor": "red"},
+    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
+    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
+    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
+    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
+    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
+    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
+    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
+]
 
 export default function PrimeiroEscopo() {
   return (
     <div>
-         {/* Primeira Parte */}
+         {/* Primeira Parte - menina feliz e astronauta*/}
          <div className={styles.primeiro_bloco}>
             <div className={styles.sbx}>
               <h1>Conheça os nossos</h1>
               <h1>novos Astrounatas!</h1>
             </div>
 
-            <div style={{display:"flex", justifyContent:"space-between"}}> 
-                <Image 
-                  src="/feliz.png" 
-                  // className={styles.logo} 
-                  width={300} 
+            <div className={styles.alinhamento_1}>
+                <Image
+                  src="/feliz.png"
+                  width={300}
                   height={400}
                 />
-                <Image 
-                  src="/2.svg" 
-                  // className={styles.logo} 
-                  width={300} 
+                <Image
+                  src="/2.svg"
+                  width={300}
                   height={400}
                 />
             </div>
 
-          {/* Cards */}
-
-            <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
-              <div style={{padding:"8px"}}>
-                <CardComponent/>
-              </div>
-              <div style={{padding:"8px"}}>
-                <CardComponent/>
-              </div>
-              <div style={{padding:"8px"}}>
-                <CardComponent/>
-              </div>
-              <div style={{padding:"8px"}}>
-                <CardComponent/>
-              </div>
+            {/* Cards Candidatos*/}
+            <div className={styles.alinhamento_cards_candidatos}>
+                {cards.map((item,index) => {
+                    return (
+                        <div key={index} style={{padding:"8px"}}>
+                            <CardComponent
+                                information={item.information}
+                                name={item.name}
+                                job={item.job}
+                                backgroundColor={item.backgroundColor}
+                            />
+                        </div>
+                    )
+                })}
             </div>
 
-            {/* <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center", width:"80%"}}>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
+            {/* Segunda Parte - Astrounauta e foguete*/}
+             <div className={styles.alinhamento_2}>
+                 <Image
+                  src="/rocket.svg"
+                  className={styles.logo}
+                  width={300}
+                  height={400}
+                 />
 
+                 <div className={styles.processo_seletivo}>
+                         Quais foram as etapas do processo seletivo?
+                 </div>
 
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-                <div style={{padding:"20px"}}>
-                  <MiniCard/>
-                </div>
-            </div> */}
-
-          {/* Segunda Parte */}
-             <div style={{display:"flex",justifyContent:"space-between", border:"1px solid green", width:"80vw", alignItems:"center"}}> 
-                <Image 
-                  src="/rocket.svg" 
+                 <Image
+                  src="/7.svg"
                   className={styles.logo} 
                   width={300} 
                   height={400}
-                />
+                  />
+             </div>
 
-                <Image 
-                  src="/2.svg" 
-                  className={styles.logo} 
-                  width={300} 
-                  height={400}
-                />
-              </div>
-          </div> 
+             {/*Etapas do Processo seletivo*/}
+
+             <EtapasProcessoSeletivo/>
+         </div>
     </div>
   )
 }

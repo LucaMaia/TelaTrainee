@@ -10,9 +10,9 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          G4F Soluções Corporativas{' '}
+          <span style={{paddingLeft:"10px"}}>
+            <Image src="/labslogo.svg" alt="Vercel Logo" width={50} height={30} />
           </span>
         </a>
       </footer>

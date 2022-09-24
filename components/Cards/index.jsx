@@ -1,33 +1,40 @@
 import * as React from 'react';
+import Image from "next/image";
+
+import styles from '../../styles/Card.module.css'
+
+//MUI
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import {CardActionArea} from '@mui/material';
 
+//Componentes
 import ImageAvatars from '../../components/Avatar'
 
-
-export default function CardComponent() {
+export default function CardComponent({information, name , job}) {
   return (
-    <Card sx={{ maxWidth: 500 }} style={{backgroundColor:"blue", borderRadius:"20px"}}>
+    <Card sx={{ maxWidth: 400 }} className={styles.card}>
       <CardActionArea>
-        <CardContent>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-
-          <div style={{display:"flex",paddingTop:"20px"}}>
-            <ImageAvatars/>
-              <div style={{padding:"20px"}}>
-                <Typography gutterBottom variant="h5" component="div">
-                  Davi Galati
-                </Typography>
-                <p>Analista de Banco de dados</p>
-              </div>
+          <div style={{padding:"20px"}}>
+            <Image
+                src="/benefs/heart.svg"
+                width={50}
+                height={50}
+            />
           </div>
-        </CardContent>
+              <CardContent>
+                    <Typography variant="body2" color="text.secondary" style={{color:"white"}}>
+                      {information}
+                    </Typography>
+                <div className={styles.imagem_alinhamento}>
+                  <ImageAvatars/>
+                    <div style={{padding:"10px"}}>
+                      <p style={{fontWeight:"bold", color:"white"}}>{name}</p>
+                      <p style={{color:"white"}}>{job}</p>
+                    </div>
+                </div>
+              </CardContent>
       </CardActionArea>
     </Card>
   );

@@ -2,9 +2,8 @@
  
 .container {
   padding: 0 2rem;
-  background-color: aqua;
-  height: 100vh;
-  /* border: 1px solid red; */
+  background: linear-gradient(90deg, rgba(60,208,224,1) 0%, rgba(0,179,215,0.8449754901960784) 100%);
+  height: auto;
 }
 
 .main {
@@ -117,53 +116,4 @@
   }
 }
 
-/* Temas */
 
-.processo_seletivo{
-  text-align:center;  
-  margin:30px auto;
-  background-color:aqua;
-  width:60%;
-  border-radius:10px;
-  padding:15px;
-  box-shadow: 10px 15px 5px black;
-}
-
-.beneficios{
-  text-align:center;  
-  margin:30px auto;
-  background-color:aqua;
-  width:60%;
-  border-radius:10px;
-  padding:15px;
-  box-shadow: 10px 15px 5px black;
-}
-
-.titulo_accordion{
-  text-align:center; 
-  margin:30px auto;
-  background-color:aqua;
-  width:60%;
-  border-radius:10px; 
-  padding:15px;
-  box-shadow: 10px 15px 5px black;
-}
-
-/* CARDS */
-
-/* .card_alinhamento{
-  display:flex; 
-  flex-wrap:wrap; 
-  justify-content:center; 
-  align-items:center; 
-  width:80%; 
-  margin:0 auto;
-}
-.card_background{
-    background-color:violet; 
-    width:300px; 
-    height:300px;
-    border-radius:20px; 
-    margin:20px auto;
-    padding:20px;
-} */

@@ -1,18 +1,16 @@
-.card{
-    /* background-color: black; */
-    border: 1px solid red;
-    border-radius: 20px ;
-    width: 350px;
-    height: 450px;
-    padding: 20px;
-    /* margin: 20px auto; */
-  }
+.card {
+    /*background: linear-gradient(90deg, rgba(60,208,224,1) 0%, rgba(0,179,215,0.8449754901960784) 100%);*/
+    background: linear-gradient(90deg, rgba(21,83,170,0.8449754901960784) 4%, rgba(60,208,224,1) 100%);
+    border-radius: 20px;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
 
-  .container{
+.container{
     display:flex;
-  }
+}
 
-  .card2{
+.card2{
     border: 1px solid red;
     background-color:violet; 
     width:300px; 
@@ -23,6 +21,7 @@
 }
 
 .imagem_alinhamento{
-  margin:0 auto;
-  width:50%;
+    display:flex;
+    flex-wrap:wrap;
+    padding-top:20px;
 }
