@@ -10,7 +10,7 @@ import {CardActionArea} from '@mui/material';
 export default function MiniCard({src, label, text, backgroundColor}) {
   return (
       // primeiro card
-    <Card sx={{ width: 200 }} style={{backgroundColor: backgroundColor, borderRadius:"30px", height:"300px"}}>
+    <Card sx={{ width: 250 }} style={{backgroundColor: backgroundColor, borderRadius:"30px", height:"300px"}}>
       <CardActionArea>
         <CardContent>
           <p style={{color:"white"}}>
