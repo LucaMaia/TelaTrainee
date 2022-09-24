@@ -1,0 +1,28 @@
+.card{
+    /* background-color: black; */
+    border: 1px solid red;
+    border-radius: 20px ;
+    width: 350px;
+    height: 450px;
+    padding: 20px;
+    /* margin: 20px auto; */
+  }
+
+  .container{
+    display:flex;
+  }
+
+  .card2{
+    border: 1px solid red;
+    background-color:violet; 
+    width:300px; 
+    height:300px;
+    border-radius:20px; 
+    margin:0 auto;
+    padding:20px;
+}
+
+.imagem_alinhamento{
+  margin:0 auto;
+  width:50%;
+}

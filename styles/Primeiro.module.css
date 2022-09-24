@@ -1,0 +1,57 @@
+/* Alinhamnetos */
+
+.sbx{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    /* border: 1px solid red; */
+    /* position: absolute; */
+  }
+  
+  .primeiro_bloco{
+    /* height:500px;  */
+    width:80vw;
+    margin:0 auto;
+  }
+  
+  .logo {
+    /* padding: 20px; */
+    /* position: absolute; */
+  }
+
+
+
+  /* Cards */
+
+  .card_alinhamento{
+    display:flex; 
+    flex-wrap:wrap; 
+    justify-content:center; 
+    align-items:center; 
+    width:70%; 
+    margin:0 auto;
+  }
+  .card_background{
+      background-color:violet; 
+      width:300px; 
+      height:300px;
+      border-radius:20px; 
+      margin:20px auto;
+      padding:20px;
+      text-align: center;
+  }
+  .imagem_alinhamento{
+    margin:0 auto;
+    width:50%;
+  }
+  
+  .beneficios{
+      text-align:center;  
+      margin:30px auto;
+      background-color:aqua;
+      width:30%;
+      border-radius:10px;
+      padding:10px;
+      box-shadow: 10px 15px 5px black;
+  }
