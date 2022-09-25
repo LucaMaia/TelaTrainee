@@ -9,6 +9,7 @@ import Footer from '../../components/Footer'
 //SubPages
 import PrimeiroEscopo from '../../subpages/primeiro'
 import Beneficios from '../../subpages/beneficios'
+import PerguntasFrequentes from "../../subpages/perguntasFrequentes";
 
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,7 +20,8 @@ export default function Home() {
       <NavbarComponent/>
         <PrimeiroEscopo/>
         <Beneficios/>
-        <AccordionComponent/>
+        <PerguntasFrequentes/>
+        {/* <AccordionComponent/> */}
       <Footer/>
     </div>
   )
