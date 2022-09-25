@@ -2,12 +2,12 @@ import React from "react";
 import styles from '../../styles/Home.module.css'
 
 // Componentes
-import AccordionComponent from '../../components/Accordion'
 import NavbarComponent from '../../components/Navbar'
 import Footer from '../../components/Footer'
 
 //SubPages
 import PrimeiroEscopo from '../../subpages/primeiro'
+import EtapasProcessoSeletivo from '../../subpages/etapasProcesso'
 import Beneficios from '../../subpages/beneficios'
 import PerguntasFrequentes from "../../subpages/perguntasFrequentes";
 
@@ -19,9 +19,9 @@ export default function Home() {
     <div className={styles.container}>
       <NavbarComponent/>
         <PrimeiroEscopo/>
+        <EtapasProcessoSeletivo/>
         <Beneficios/>
         <PerguntasFrequentes/>
-        {/* <AccordionComponent/> */}
       <Footer/>
     </div>
   )

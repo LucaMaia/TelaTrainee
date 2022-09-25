@@ -1,13 +1,15 @@
 import React from "react";
 import Accordion from 'react-bootstrap/Accordion';
 
+import styles from "../../styles/Accordion.module.css";
+
 export default function AccordionComponent({title, text}) {
   return (
       <>
-        <Accordion style={{width:"70%", margin:"0 auto", padding:"5px"}}>
-          <Accordion.Item eventKey="0" variant="danger">
-            <Accordion.Header >{title}</Accordion.Header>
-            <Accordion.Body style={{backgroundColor:"white"}}>
+        <Accordion className={styles.alinhamento_accordion}>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>{title}</Accordion.Header>
+            <Accordion.Body >
               {text}
             </Accordion.Body>
           </Accordion.Item>

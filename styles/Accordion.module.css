@@ -7,3 +7,9 @@
     padding:15px;
     box-shadow: 10px 15px 5px black;
 }
+
+.alinhamento_accordion{
+    width:70%; 
+    margin:0 auto; 
+    padding:5px;
+}

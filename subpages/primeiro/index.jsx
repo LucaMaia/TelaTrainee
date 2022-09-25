@@ -2,13 +2,14 @@ import React from "react";
 import Image from 'next/image'
 import styles from '../../styles/Primeiro.module.css'
 
+// Components
 import CardComponent from '../../components/Cards'
 
+// SubPages
 import EtapasProcessoSeletivo from '../../subpages/etapasProcesso'
 
-
 let cards = [
-    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. ", "backgroundColor": "red"},
+    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
     { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
     { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
     { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
