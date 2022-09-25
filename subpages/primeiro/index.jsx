@@ -10,8 +10,8 @@ import EtapasProcessoSeletivo from '../../subpages/etapasProcesso'
 
 let cards = [
     { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
-    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
-    { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
+    { "name": "Davi SOars Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
+    { "name": "Luca Lins Maia Vieira de Oliveira", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
     { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
     { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
     { "name": "Davi Galati", "job": "Analista de banco de dados", "information": "Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. "},
@@ -58,7 +58,7 @@ export default function PrimeiroEscopo() {
                 })}
             </div>
 
-            {/* Segunda Parte - Astrounauta e foguete*/}
+            {/* Segunda Parte - Notebook e foguete*/}
              <div className={styles.alinhamento_2}>
                  <Image
                   src="/rocket.svg"
