@@ -19,7 +19,18 @@ export default function Home() {
     <div className={styles.container}>
       <NavbarComponent/>
         <PrimeiroEscopo/>
+
         <EtapasProcessoSeletivo/>
+
+        {/* <EtapasProcessoSeletivo
+          title="Incrições"
+          description="Etapas de Lançamento"
+          number="1"
+          date="De 17 até 26 de agosto"
+          text="As inscrições serão realizadas online através de links disponibilizados aqui neste mesmo site."
+        /> */}
+
+
         <Beneficios/>
         <PerguntasFrequentes/>
       <Footer/>

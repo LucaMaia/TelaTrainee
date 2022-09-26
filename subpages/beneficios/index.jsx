@@ -20,7 +20,7 @@ export default function Beneficios() {
               <div className={styles.beneficios}>
                   {miniCards.map((item,index) => {
                       return (
-                          <div  key={index} style={{padding:"10px"}}>
+                          <div  key={index} style={{padding:"40px"}}>
                               <MiniCard
                                   src={item.src}
                                   label={item.label}
