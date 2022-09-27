@@ -12,7 +12,7 @@ import {CardActionArea} from '@mui/material';
 //Componentes
 import ImageAvatars from '../../components/Avatar'
 
-export default function CardComponent({information, name , job}) {
+export default function CardComponent({information, name , job, src}) {
   return (
     <Card sx={{ maxWidth: 450 }} className={styles.card}>
       <CardActionArea style={{height:"440px"}}>
@@ -28,7 +28,7 @@ export default function CardComponent({information, name , job}) {
                       {information}
                     </Typography>
                 <div className={styles.imagem_alinhamento}>
-                  <ImageAvatars/>
+                  <ImageAvatars src={src}/>
                     <div style={{padding:"10px"}}>
                       <p style={{fontWeight:"bold", color:"white"}}>{name}</p>
                       <p style={{color:"white"}}>{job}</p>
