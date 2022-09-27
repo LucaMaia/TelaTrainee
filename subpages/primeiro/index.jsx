@@ -5,9 +5,6 @@ import styles from '../../styles/Primeiro.module.css'
 // Components
 import CardComponent from '../../components/Cards'
 
-// SubPages
-// import EtapasProcessoSeletivo from '../../subpages/etapasProcesso'
-
 let cards = [
     { "name": "Pedro Henrique Martins Teixeira", "job": "Analista de requisistos", "information": "Um processo sensacional, todo carinho que a G4F deu desde o inicío do projeto, além da liberdade para que todos os selecionados pudessem apresentar suas qualidades durante o  processo seletivo, tudo foi muito muito bem planejado e excecutado. Quero retribuir toda expectativa que a G4F depositou nos novos profissionais do projeto Trainee da melhor forma. ", "src": "/PedroTeixeira.svg"},
     { "name": "Eduardo borges", "job": "Analista de requisitos", "information": "Participei do processo seletivo do programa trainee da G4F, no qual a dinâmica me surpreendeu. Foi uma experiência muito boa por juntar 5 pessoas que nunca se viram na vida para desenvolver  a solução de um problema específico em 3 dias. Meu grupo da dinâmica deu muito certo, e conseguimos entregar nossa ideia. Hoje posso me desenvolver dentro de um ambiente real e tenho maior oportunidade de crescimento profissional  graças ao projeto.",  "src": "/EduardoBorges.svg"},
@@ -86,8 +83,6 @@ export default function PrimeiroEscopo() {
                       />
                   </div>
                 </div>
-
-                
 
             {/* Cards Candidatos*/}
             <div className={styles.alinhamento_cards_candidatos}>

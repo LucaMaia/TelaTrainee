@@ -1,7 +1,9 @@
 import React from "react";
 import Image from 'next/image'
-import MiniCard from "../../components/MiniCard";
 import styles from '../../styles/Beneficios.module.css'
+
+// Componentes
+import MiniCard from "../../components/MiniCard";
 
 let miniCards = [
     {"src": "/benefs/heart.svg", "label": "Cuidando de você!", "text": "Plano de Saúde", "backgroundColor":"#993399"},
@@ -15,8 +17,6 @@ let miniCards = [
 export default function Beneficios() {
   return (
       <>
-
-             
           <h4 className={styles.titulo}>
               Beneficíos
           </h4>
@@ -39,7 +39,6 @@ export default function Beneficios() {
                   </div>
         </div>
 
-
               <div className={styles.beneficios}>
                   {miniCards.map((item,index) => {
                       return (
@@ -54,8 +53,6 @@ export default function Beneficios() {
                       )
                   })}
               </div>
-
-
       </>
 
   )

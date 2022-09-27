@@ -26,7 +26,6 @@ export default function EtapasProcessoSeletivo() {
                 width={300}
                 height={400}
             />
-
                  <div className={styles.processo_seletivo}>
                     Quais foram as etapas do processo seletivo?
                  </div>
@@ -38,7 +37,6 @@ export default function EtapasProcessoSeletivo() {
                 height={400}
             />
         </div>
-
 
         <div style={{position:"relative"}}> 
                   <div className={styles.alinhamento_imagem_oculos}>
@@ -68,7 +66,7 @@ export default function EtapasProcessoSeletivo() {
 
 				{cardsProcessoSeletivo.map((item,index) => {
                     return (
-                        <div key={index} style={{padding:"10px 40px"}}>
+                        <div key={index} style={{padding:" 40px"}}>
                             <CardProcessoSeletivo
                               title={item.title}
                               description={item.description}
