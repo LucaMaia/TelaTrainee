@@ -31,8 +31,51 @@
     color: white;
     font-size: 25px;
     font-weight: bold;
+    background: #10778D;
 
 }
+
+
+/* AlinahmentoDasImagens */
+
+
+.alinhamento_imagem_oculos{
+    position:absolute ;
+    /* border:1px solid green; */
+    width:100%;
+    display:flex;
+    justify-content:start;
+}
+
+.alinhamento_imagem_fone{
+    position:absolute;
+    /* border:1px solid green; */
+    width:100%;
+    margin-top:800px;
+    display:flex;
+    justify-content:end;
+}
+
+.alinhamento_imagem_pendrive{
+    position:absolute;
+    /* border:1px solid green; */
+    width:100%;
+    margin-top:1400px;
+}
+
+
+@media (max-width: 1600px) {
+    .alinhamento_imagem_oculos{
+        display: none;
+    }
+    .alinhamento_imagem_fone{
+        display: none;
+    }
+    .alinhamento_imagem_pendrive{
+        display: none;
+    }
+}
+
 
 
 

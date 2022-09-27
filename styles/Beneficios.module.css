@@ -18,6 +18,35 @@
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    /*border:1px solid red;*/
+}
+
+
+/* AlinhamentoImagem */
+
+.alinhamento_imagem_oculos{
+    position:absolute;
+    /* border:1px solid green; */
+    width:100%;
+    display:flex;
+    justify-content:start;
+}
+
+.alinhamento_imagem_pendrive{
+    position:absolute;
+    /* border:1px solid green; */
+    width:100%;
+    display:flex;
+    justify-content:end;
+    margin-top: 400px;
+}
+
+
+@media (max-width: 1500px) {
+    .alinhamento_imagem_oculos{
+        display: none;
+    }
+    .alinhamento_imagem_pendrive{
+        display: none;
+    }
 }
 

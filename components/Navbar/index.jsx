@@ -13,8 +13,8 @@ export default function NavbarComponent(){
       <Container>
         <Navbar.Brand href="#home">
                 <Image 
-                  src="/labslogo.svg" 
-                  width={100} 
+                  src="/LogoTrainee.svg" 
+                  width={130} 
                   height={70}
                 />
         </Navbar.Brand>

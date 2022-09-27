@@ -14,11 +14,11 @@ import ImageAvatars from '../../components/Avatar'
 
 export default function CardComponent({information, name , job}) {
   return (
-    <Card sx={{ maxWidth: 400 }} className={styles.card}>
-      <CardActionArea>
+    <Card sx={{ maxWidth: 450 }} className={styles.card}>
+      <CardActionArea style={{height:"440px"}}>
           <div style={{padding:"20px"}}>
             <Image
-                src="/benefs/heart.svg"
+                src="/benefs/Vector.svg"
                 width={50}
                 height={50}
             />

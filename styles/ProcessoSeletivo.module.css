@@ -35,26 +35,10 @@
     overflow: hidden;
 }
 
-
-/* .list{
-	width: 60%;
-    height: auto;
-	margin: 0 auto;
-	margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-} */
-
-
 .item{
-	position: relative;
-	padding: 15px;
-    width: auto;
-    height: 200px;
-	border-radius: 10px;
-	background: rgba(0, 0, 0, 0.197);
+	padding: 10px;
     display: flex;
-    
+	height: 700px;
 }
 
 .num{
@@ -74,7 +58,6 @@
 	margin-left: 20px;
 	float: left;
 	width: 90%;
-    height: auto;    
 }
 
 .info h2{
@@ -110,18 +93,87 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.desc b{
-	color: #5F0096
+
+/* SEtaa */
+
+.seta {
+	position: relative;
+	justify-content: center;
+	display: flex;
+	margin-top: 50px;
+	transform: rotate(90deg);
+  }
+  .seta span {
+	width: 50px;
+	height: 5px;
+	background-color: greenyellow;
+	position: relative;
+  }
+  .seta span:before,
+  .seta span:after {
+	margin-left: 22px;
+	content: "";
+	width: 35px;
+	height: 100%;
+	background-color: greenyellow;
+	position: relative;
+	display: flex;
+  }
+  .seta span:before {
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	bottom: 11px;
+  }
+  .seta span:after {
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	bottom: -6px;
+  }
+  
+
+  /* AlinhamentoImagens */
+
+  .alinhamento_imagem_oculos{
+    position:absolute ;
+    /* border:1px solid green; */
+    width:100%;
+    display:flex;
+    justify-content:start;
+	margin-top: 100px ;
 }
 
-.desc div{
-	position: absolute;
-	right: 0;
-	bottom: -7px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 7px 8px 0 0;
-	border-color: #860f transparent transparent transparent;		
-} 
 
+.alinhamento_imagem_laptop{
+    position:absolute ;
+    /* border:1px solid green; */
+    width:100%;
+    display:flex;
+    justify-content: end;
+	margin-top: 500px ;
+}
+
+.alinhamento_imagem_error{
+    position:absolute ;
+    /* border:1px solid green; */
+    width:100%;
+	margin-top: 900px ;
+}
+
+
+@media (max-width: 1500px) {
+    .alinhamento_imagem_oculos{
+        display: none;
+    }
+    .alinhamento_imagem_laptop{
+        display: none;
+    }
+    .alinhamento_imagem_error{
+        display: none;
+    }
+}
