@@ -11,7 +11,7 @@ export default function CardProcessoSeletivo({title,description,date,text,number
         <Card sx={{ maxWidth: 800}} style={{
             borderRadius:"20px", 
             height:"150px",    
-            boxShadow: "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px", 
+            boxShadow: "rgba(0, 0, 0, 0.15) 15px 15px 2.6px",
             margin:"0 auto",
             background:"#7a297a",
             // overflow:"visible"
@@ -22,7 +22,7 @@ export default function CardProcessoSeletivo({title,description,date,text,number
 
                             <div className={styles.info}>
                                 <div style={{display:"flex", flexWrap:"wrap"}}> 
-                                    <h2 style={{paddingLeft:"5px",fontWeight:"bold", fontSize:"20px"}}>{title}</h2>
+                                    <h2 style={{paddingLeft:"5px",fontWeight:"bold",color:"white", fontSize:"20px"}}>{title}</h2>
                                     <span style={{paddingLeft:"5px",color:"violet",fontWeight:"bold"}}>{description}</span>
                                 </div>
                                 
@@ -33,9 +33,9 @@ export default function CardProcessoSeletivo({title,description,date,text,number
                 </CardActionArea>
         </Card>
 
-        {/* <div className={styles.seta}>
-            <span></span>
-        </div> */}
+        {/* <div className={styles.seta}>*/}
+        {/*    <span></span>*/}
+        {/*</div>*/}
     </>
   )
 }

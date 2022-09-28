@@ -24,17 +24,18 @@ export default function EtapasProcessoSeletivo() {
                 src="/Foguete.svg"
                 className={styles.logo}
                 width={300}
-                height={400}
+                height={700}
             />
                  <div className={styles.processo_seletivo}>
-                    Quais foram as etapas do processo seletivo?
+                     <p>Quais foram as etapas</p>
+                     <p>do processo seletivo?</p>
                  </div>
 
             <Image
-                src="/7.svg"
+                src="/2.svg"
                 className={styles.logo} 
                 width={300} 
-                height={400}
+                height={300}
             />
         </div>
 
