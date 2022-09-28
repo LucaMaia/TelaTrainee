@@ -4,6 +4,7 @@ import styles from '../../styles/ProcessoSeletivo.module.css'
 // MaterialUI
 import Card from '@mui/material/Card';
 import {CardActionArea} from '@mui/material';
+import Image from "next/image";
 
 export default function CardProcessoSeletivo({title,description,date,text,number, image}) {
   return (
@@ -33,8 +34,8 @@ export default function CardProcessoSeletivo({title,description,date,text,number
                 </CardActionArea>
         </Card>
 
-        {/* <div className={styles.seta}>*/}
-        {/*    <span></span>*/}
+        {/*<div style={{display:"flex", justifyContent:"center"}}>*/}
+        {/*    <Image src={image} alt="Vercel Logo" width={90} height={40} />*/}
         {/*</div>*/}
     </>
   )

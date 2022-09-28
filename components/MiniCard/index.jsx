@@ -20,7 +20,7 @@ export default function MiniCard({src, label, text, backgroundColor}) {
                   width={50}
                   height={100}
                 />
-            <p style={{color:"white"}}>
+            <p style={{color:"white", fontWeight:"bold"}}>
                 {text}
             </p>
         </CardContent>
