@@ -18,7 +18,7 @@ export default function PerguntasFrequentes() {
         </h4>
                 {accordion.map((item,index) => {
                     return (
-                        <div key={index}>
+                        <div key={index} style={{ width:"90%", margin:"0 auto"}}>
                             <AccordionComponent
                               title={item.title}
                               text={item.text}

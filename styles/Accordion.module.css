@@ -10,7 +10,7 @@
 }
 
 .alinhamento_accordion{
-    width:70%; 
+    width:60%;
     margin:0 auto; 
     padding:5px;
 }
@@ -18,5 +18,8 @@
 @media (max-width: 900px) {
     .titulo_accordion{
         width:60%;
+    }
+    .alinhamento_accordion{
+        width:90%;
     }
 }

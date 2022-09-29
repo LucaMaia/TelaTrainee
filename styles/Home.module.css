@@ -1,7 +1,7 @@
 /* CSS que vem com o projeto */
  
 .container {
-  padding: 0 2rem;
+  /*padding: 0 2rem;*/
   background: linear-gradient(90deg, rgba(60,208,224,1) 0%, rgba(0,179,215,0.8449754901960784) 100%);
 }
 

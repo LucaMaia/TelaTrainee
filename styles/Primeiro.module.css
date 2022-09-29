@@ -9,12 +9,11 @@
     justify-content: center;
     width: 60%;
     color: white;
-    padding-left: 200px ;
+    padding-left: 250px ;
   }
 
 .txt{
     font-size: 55px;
-    /*border: 1px solid red;*/
     font-weight: bold;
 }
 
@@ -27,6 +26,9 @@
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 .astronautas_aprovados{
@@ -99,6 +101,9 @@
 @media (max-width: 550px) {
     .txt{
         font-size: 35px;
+    }
+    .alinhamento_cards_candidatos{
+        width: 100%;
     }
 }
 

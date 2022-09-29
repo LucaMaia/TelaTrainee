@@ -69,7 +69,7 @@ export default function EtapasProcessoSeletivo() {
 
 				{cardsProcessoSeletivo.map((item,index) => {
                     return (
-                        <div key={index} >
+                        <div key={index} style={{width:"90%", margin:"0 auto"}}>
                             <CardProcessoSeletivo
                               title={item.title}
                               description={item.description}
