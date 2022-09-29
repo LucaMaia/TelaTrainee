@@ -10,7 +10,7 @@ export default function CardProcessoSeletivo({title,description,date,text,number
   return (
     <>
         <Card sx={{ maxWidth: 800}} className={styles.card}>
-                <CardActionArea>
+                <CardActionArea >
                         <div className={styles.item}>
                             <div className={styles.num}>{number}</div>
 

@@ -32,8 +32,8 @@ export default function PrimeiroEscopo() {
                 </div>
 
                 <div className={styles.sbx}>
-                    <h1>Conheça os nossos</h1>
-                    <h1>novos Astronautas!</h1>
+                    <p className={styles.txt}>Conheça os nossos</p>
+                    <p className={styles.txt}>novos astronautas!</p>
                 </div>
 
                 <div  className={styles.logo} style={{position:"relative"}}>
@@ -90,7 +90,7 @@ export default function PrimeiroEscopo() {
             <div className={styles.alinhamento_cards_candidatos}>
                 {cards.map((item,index) => {
                     return (
-                        <div key={index} style={{padding:"10px 40px", margin:"20px"}}>
+                        <div key={index} style={{padding:"10px"}}>
                             <CardComponent
                                 information={item.information}
                                 name={item.name}

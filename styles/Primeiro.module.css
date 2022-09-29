@@ -7,10 +7,16 @@
     margin: 0 auto;
     text-align: center;
     justify-content: center;
-    width: 80%;
+    width: 60%;
     color: white;
     padding-left: 200px ;
   }
+
+.txt{
+    font-size: 55px;
+    /*border: 1px solid red;*/
+    font-weight: bold;
+}
 
 .alinhamento_1{
     display:flex;
@@ -80,7 +86,22 @@
         color: white;
         padding: 20px ;
     }
+    .txt{
+        font-size: 50px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: bold;
+    }
 }
+
+
+@media (max-width: 550px) {
+    .txt{
+        font-size: 35px;
+    }
+}
+
 
 
 

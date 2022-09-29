@@ -52,22 +52,22 @@
 
 @media (max-width: 475px) {
     .card {
-        height:600px;
+        height:500px;
         width: auto;
     }
     .card_action_area{
-        height:600px;
+        height:500px;
         width: auto;
     }
 }
 
 @media (max-width: 380px) {
     .card {
-        height:800px;
+        height:600px;
         width: auto;
     }
     .card_action_area{
-        height:800px;
+        height:600px;
         width: auto;
     }
 }
