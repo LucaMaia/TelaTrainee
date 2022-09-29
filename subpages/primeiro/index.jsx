@@ -21,23 +21,25 @@ export default function PrimeiroEscopo() {
     <div>
          {/* Primeira Parte - menina feliz e astronauta*/}
          <div className={styles.primeiro_bloco}>
-            <div className={styles.sbx}>
-              <h1>Conheça os nossos</h1>
-              <h1>novos Astronautas!</h1>
-            </div>
 
             <div className={styles.alinhamento_1}>
-                <Image
-                  src="/feliz.png"
-                  width={300}
-                  height={400}
-                />
+                <div className={styles.logo}>
+                    <Image
+                        src="/feliz.png"
+                        width={300}
+                        height={400}
+                    />
+                </div>
 
-                <div style={{position:"relative"}}> 
-                  <div style={{
+                <div className={styles.sbx}>
+                    <h1>Conheça os nossos</h1>
+                    <h1>novos Astronautas!</h1>
+                </div>
+
+                <div  className={styles.logo} style={{position:"relative"}}>
+                  <div className={styles.logo} style={{
                       position:"absolute", 
-                      alignItems:"center", 
-                      // border:"1px solid red"
+                      alignItems:"center",
                     }}>
                   <Image
                       src="/linhas.svg"

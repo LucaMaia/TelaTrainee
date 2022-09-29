@@ -37,7 +37,7 @@ export default function Beneficios() {
                             height={150}
                         />
                   </div>
-        </div>
+          </div>
 
               <div className={styles.beneficios}>
                   {miniCards.map((item,index) => {

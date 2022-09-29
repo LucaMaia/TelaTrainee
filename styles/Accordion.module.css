@@ -2,14 +2,21 @@
     text-align:center;
     margin:30px auto;
     color: white;
+    background-color: #2EA3BC;
     width:30%;
     border-radius:10px;
     padding:15px;
-    box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
 }
 
 .alinhamento_accordion{
     width:70%; 
     margin:0 auto; 
     padding:5px;
+}
+
+@media (max-width: 900px) {
+    .titulo_accordion{
+        width:60%;
+    }
 }

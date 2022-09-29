@@ -6,37 +6,39 @@ import styles from '../../styles/ProcessoSeletivo.module.css'
 import CardProcessoSeletivo from "../../components/CardProcessoSeletivo";
 
 let cardsProcessoSeletivo = [
-	{"title":"Inscrições", "description":"Etapas de Lançamento", "number":"1", "date":"De 17 até 26 de agosto", "text":"As inscrições serão realizadas online através de links disponibilizados aqui neste mesmo site.", "image":"/Foguete.svg"},
-	{"title":"Teste de Mapeamento", "number":"2", "date":"31 de agosto", "text":"Qual o seu perfil? Será avaliada a aderência, raciocínio lógico e conhecimentos específicos dos inscritos."},
-	{"title":"Desafio", "description":"Presencial", "number":"3", "date":"Nos dias 01 a 03 de Setembro", "text":"è hora de resolver problemas! O desafio proposto será capaz de avaliar a capacidade de cada candidato de estruturar e resolver problemas."},
-	{"title":"Dinâmica", "number":"4", "date":"5 de Setembro", "text":"Trabalho em Equipe! O desafio proposto será capaz de avaliar a capacidade de cada candidato de estruturar e resolver problemas."},
-	{"title":"Painel de Gestores", "description":"Presencial", "number":"5", "date":"6 de Setembro", "text":"Gestão e inovação! Agora é o momento de cada um falar com detalhes de como pensou e trabalhou na solução do desafio."},
-	{"title":"Entrevista com Diretores", "description":"Presencial", "number":"6", "date":"De 9 até 12 de Setembro", "text":"A diretoria quer te conhecer! Na reta final do nosso processo seletivo os nossos executivos querem saber um pouco mais sobre você."},
+	{"title":"Inscrições", "description":"Etapas de Lançamento", "number":"1", "date":"De 17 até 26 de agosto", "text":"As inscrições serão realizadas online através de links disponibilizados aqui neste mesmo site.", "image":"/retangulo3.svg"},
+	{"title":"Teste de Mapeamento", "number":"2", "date":"31 de agosto", "text":"Qual o seu perfil? Será avaliada a aderência, raciocínio lógico e conhecimentos específicos dos inscritos.", "image":"/retangulo3.svg"},
+	{"title":"Desafio", "description":"Presencial", "number":"3", "date":"Nos dias 01 a 03 de Setembro", "text":"è hora de resolver problemas! O desafio proposto será capaz de avaliar a capacidade de cada candidato de estruturar e resolver problemas.", "image":"/retangulo3.svg"},
+	{"title":"Dinâmica", "number":"4", "date":"5 de Setembro", "text":"Trabalho em Equipe! O desafio proposto será capaz de avaliar a capacidade de cada candidato de estruturar e resolver problemas.", "image":"/retangulo3.svg"},
+	{"title":"Painel de Gestores", "description":"Presencial", "number":"5", "date":"6 de Setembro", "text":"Gestão e inovação! Agora é o momento de cada um falar com detalhes de como pensou e trabalhou na solução do desafio.", "image":"/retangulo3.svg"},
+	{"title":"Entrevista com Diretores", "description":"Presencial", "number":"6", "date":"De 9 até 12 de Setembro", "text":"A diretoria quer te conhecer! Na reta final do nosso processo seletivo os nossos executivos querem saber um pouco mais sobre você.", "image":"/retangulo3.svg"},
 	{"title":"Início das atividades", "number":"7", "date":"19 de Setembro", "text":"Parabéns! Você oficialmente se tornou um astronauta do universo G4F Labs."},
 ]
 
 export default function EtapasProcessoSeletivo() {
   return (
-
 	<>
 		<div className={styles.alinhamento_2}>
-            <Image
-                src="/Foguete.svg"
-                className={styles.logo}
-                width={300}
-                height={700}
-            />
+            <div className={styles.logo}>
+                <Image
+                    src="/Foguete.svg"
+                    width={300}
+                    height={700}
+                />
+            </div>
+
                  <div className={styles.processo_seletivo}>
                      <p>Quais foram as etapas</p>
                      <p>do processo seletivo?</p>
                  </div>
 
-            <Image
-                src="/2.svg"
-                className={styles.logo} 
-                width={300} 
-                height={300}
-            />
+            <div className={styles.logo}>
+                <Image
+                    src="/2.svg"
+                    width={300}
+                    height={700}
+                />
+            </div>
         </div>
 
         <div style={{position:"relative"}}> 
@@ -67,7 +69,7 @@ export default function EtapasProcessoSeletivo() {
 
 				{cardsProcessoSeletivo.map((item,index) => {
                     return (
-                        <div key={index} style={{padding:" 50px"}}>
+                        <div key={index} >
                             <CardProcessoSeletivo
                               title={item.title}
                               description={item.description}

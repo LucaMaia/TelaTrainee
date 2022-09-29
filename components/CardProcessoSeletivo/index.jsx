@@ -9,22 +9,15 @@ import Image from "next/image";
 export default function CardProcessoSeletivo({title,description,date,text,number, image}) {
   return (
     <>
-        <Card sx={{ maxWidth: 800}} style={{
-            borderRadius:"20px", 
-            height:"150px",    
-            boxShadow: "rgba(0, 0, 0, 0.15) 15px 15px 2.6px",
-            margin:"0 auto",
-            background:"#7a297a",
-            // overflow:"visible"
-        }}>
+        <Card sx={{ maxWidth: 800}} className={styles.card}>
                 <CardActionArea>
                         <div className={styles.item}>
                             <div className={styles.num}>{number}</div>
 
                             <div className={styles.info}>
-                                <div style={{display:"flex", flexWrap:"wrap"}}> 
-                                    <h2 style={{paddingLeft:"5px",fontWeight:"bold",color:"white", fontSize:"20px"}}>{title}</h2>
-                                    <span style={{paddingLeft:"5px",color:"violet",fontWeight:"bold"}}>{description}</span>
+                                <div className={styles.alinhamento_card_processoseletivo}>
+                                    <h2 className={styles.title}>{title}</h2>
+                                    <span className={styles.description}>{description}</span>
                                 </div>
                                 
                                 <p className={styles.date}>{date}</p>
@@ -34,9 +27,9 @@ export default function CardProcessoSeletivo({title,description,date,text,number
                 </CardActionArea>
         </Card>
 
-        {/*<div style={{display:"flex", justifyContent:"center"}}>*/}
-        {/*    <Image src={image} alt="Vercel Logo" width={90} height={40} />*/}
-        {/*</div>*/}
+        <div style={{display:"flex", justifyContent:"center"}}>
+            <Image src={image}  width={10} height={20} />
+        </div>
     </>
   )
 }

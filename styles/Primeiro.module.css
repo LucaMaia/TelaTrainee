@@ -9,6 +9,7 @@
     justify-content: center;
     width: 80%;
     color: white;
+    padding-left: 200px ;
   }
 
 .alinhamento_1{
@@ -34,13 +35,10 @@
     background: #10778D;
 }
 
-
-/* AlinahmentoDasImagens */
-
+/* Alinhamento Das Imagens */
 
 .alinhamento_imagem_oculos{
     position:absolute ;
-    /* border:1px solid green; */
     width:100%;
     display:flex;
     justify-content:start;
@@ -48,7 +46,6 @@
 
 .alinhamento_imagem_fone{
     position:absolute;
-    /* border:1px solid green; */
     width:100%;
     margin-top:800px;
     display:flex;
@@ -57,7 +54,6 @@
 
 .alinhamento_imagem_pendrive{
     position:absolute;
-    /* border:1px solid green; */
     width:100%;
     margin-top:1400px;
 }
@@ -73,8 +69,18 @@
     .alinhamento_imagem_pendrive{
         display: none;
     }
+    .logo{
+        display: none;
+    }
+    .sbx{
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        color: white;
+        padding: 20px ;
+    }
 }
-
 
 
 

@@ -14,13 +14,14 @@ import ImageAvatars from '../../components/Avatar'
 
 export default function CardComponent({information, name , job, src}) {
   return (
-    <Card sx={{ maxWidth: 450 }} className={styles.card}>
-      <CardActionArea style={{height:"440px", overflow:"auto"}}>
-          <div style={{padding:"20px"}}>
+    <Card sx={{ maxWidth: 520 }} className={styles.card}>
+      <CardActionArea className={styles.card_action_area}>
+          <div style={{paddingLeft:"20px"}}>
             <Image
                 src="/benefs/Vector.svg"
                 width={50}
-                height={50}
+                height={40}
+                style={{opacity:"0.4"}}
             />
           </div>
               <CardContent>
@@ -29,9 +30,9 @@ export default function CardComponent({information, name , job, src}) {
                     </Typography>
                 <div className={styles.imagem_alinhamento}>
                   <ImageAvatars src={src}/>
-                    <div style={{padding:"10px"}}>
-                      <p style={{fontWeight:"bold", color:"white"}}>{name}</p>
-                      <p style={{color:"white"}}>{job}</p>
+                    <div style={{padding:"10px", paddingTop:"30px"}}>
+                      <div style={{fontWeight:"bold", color:"white"}}>{name}</div>
+                      <div style={{color:"white"}}>{job}</div>
                     </div>
                 </div>
               </CardContent>
