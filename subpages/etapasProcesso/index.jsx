@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image'
 import styles from '../../styles/ProcessoSeletivo.module.css'
 
-// Components
+/* Components*/
 import CardProcessoSeletivo from "../../components/CardProcessoSeletivo";
 
 let cardsProcessoSeletivo = [
@@ -18,7 +18,7 @@ let cardsProcessoSeletivo = [
 export default function EtapasProcessoSeletivo() {
   return (
 	<>
-		<div className={styles.alinhamento_2}>
+		<div className={styles.alinhamento_processoseletivo}>
             <div className={styles.logo}>
                 <Image
                     src="/Foguete.svg"
@@ -27,7 +27,7 @@ export default function EtapasProcessoSeletivo() {
                 />
             </div>
 
-                 <div className={styles.processo_seletivo}>
+                 <div className={styles.titulo_processo_seletivo}>
                      <p>Quais foram as etapas</p>
                      <p>do processo seletivo?</p>
                  </div>
@@ -35,8 +35,8 @@ export default function EtapasProcessoSeletivo() {
             <div className={styles.logo}>
                 <Image
                     src="/2.svg"
-                    width={300}
-                    height={700}
+                    width={400}
+                    height={1000}
                 />
             </div>
         </div>
@@ -54,7 +54,7 @@ export default function EtapasProcessoSeletivo() {
                        <Image
                             src="/7.svg"
                             width={250}
-                            height={150}
+                            height={250}
                         />
                   </div>
 

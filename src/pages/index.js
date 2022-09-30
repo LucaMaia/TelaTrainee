@@ -1,7 +1,7 @@
 import React from "react";
 import styles from '../../styles/Home.module.css'
 
-// Componentes
+/* Componentes*/
 import NavbarComponent from '../../components/Navbar'
 import Footer from '../../components/Footer'
 
@@ -11,7 +11,7 @@ import EtapasProcessoSeletivo from '../../subpages/etapasProcesso'
 import Beneficios from '../../subpages/beneficios'
 import PerguntasFrequentes from "../../subpages/perguntasFrequentes";
 
-// Bootstrap
+/* Bootstrap*/
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {

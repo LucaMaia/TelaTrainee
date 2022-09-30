@@ -17,7 +17,7 @@
     font-weight: bold;
 }
 
-.alinhamento_1{
+.alinhamento_menina_astronauta{
     display:flex;
     justify-content:space-between;
 }
@@ -43,7 +43,6 @@
     background: #10778D;
 }
 
-/* Alinhamento Das Imagens */
 
 .alinhamento_imagem_oculos{
     position:absolute ;
@@ -63,7 +62,7 @@
 .alinhamento_imagem_pendrive{
     position:absolute;
     width:100%;
-    margin-top:1400px;
+    margin-top:1100px;
 }
 
 

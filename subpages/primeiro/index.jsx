@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image'
 import styles from '../../styles/Primeiro.module.css'
 
-// Components
+/* Components*/
 import CardComponent from '../../components/Cards'
 
 let cards = [
@@ -21,8 +21,7 @@ export default function PrimeiroEscopo() {
     <div>
          {/* Primeira Parte - menina feliz e astronauta*/}
          <div className={styles.primeiro_bloco}>
-
-            <div className={styles.alinhamento_1}>
+            <div className={styles.alinhamento_menina_astronauta}>
                 <div className={styles.logo}>
                     <Image
                         src="/feliz.png"
@@ -36,13 +35,8 @@ export default function PrimeiroEscopo() {
                     <p className={styles.txt}>novos astronautas!</p>
                 </div>
 
-                <div  className={styles.logo} style={{position:"relative"}}>
-                  <div className={styles.logo} style={{
-                      position:"absolute", 
-                      alignItems:"center",
-                      overflow:"",
-                      transform: [{ rotate: '190deg'}]
-                    }}>
+                <div  className={styles.logo} style={{position:"relative",border:"1px solid green",transform: [{ rotate: '90deg'}]}}>
+                  <div className={styles.logo} style={{position:"absolute", alignItems:"center"}}>
                   <Image
                       src="/linhas.svg"
                       width={600}
@@ -83,7 +77,7 @@ export default function PrimeiroEscopo() {
                     <Image
                         src="/Pendrive.svg"
                         width={150}
-                        height={150}
+                        height={130}
                       />
                   </div>
                 </div>
