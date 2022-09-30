@@ -9,7 +9,7 @@
 }
 
 .sbx{
-    margin: 80px 0px auto;
+    margin:50px 0px auto;
     text-align: center;
     justify-content: center;
     width: 50%;
@@ -66,6 +66,13 @@
     margin-top:1100px;
 }
 
+@media (max-width: 1690px) {
+    .sbx{
+        margin-top: 40px ;
+        font-size: 50px;
+    }
+
+}
 
 @media (max-width: 1600px) {
     .alinhamento_imagem_oculos{
