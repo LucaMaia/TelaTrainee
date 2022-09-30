@@ -14,7 +14,7 @@ import ImageAvatars from '../../components/Avatar'
 
 export default function CardComponent({information, name , job, src}) {
   return (
-    <Card sx={{ maxWidth: 520 }} className={styles.card}>
+    <Card sx={{ maxWidth: 520 }} style={{    background: "#10778D", borderRadius: "20px",boxShadow: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px",}}>
       <CardActionArea className={styles.card_action_area}>
           <div style={{paddingLeft:"20px"}}>
             <Image

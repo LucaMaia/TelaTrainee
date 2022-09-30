@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function CardProcessoSeletivo({title,description,date,text,number, image}) {
   return (
     <>
-        <Card sx={{ maxWidth: 800}} className={styles.card}>
+        <Card sx={{ maxWidth: 800}} style={{borderRadius:"20px",height:"auto",boxShadow: "rgba(0, 0, 0, 0.15) 10px 10px 2.6px",margin: "0 auto",background:"#7a297a"}}>
                 <CardActionArea >
                         <div className={styles.item}>
                             <div className={styles.num}>{number}</div>
