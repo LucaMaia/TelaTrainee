@@ -15,7 +15,7 @@
     width: 50%;
     color: white;
     padding-left: 250px ;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: bold;
 }
 
@@ -87,20 +87,16 @@
         width: 80%;
         color: white;
         padding: 20px ;
+        font-size: 40px;
+
     }
-    .txt{
-        font-size: 50px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        font-weight: bold;
-    }
+
 }
 
 
 @media (max-width: 550px) {
-    .txt{
-        font-size: 35px;
+    .sbx{
+        font-size: 30px;
     }
     .alinhamento_cards_candidatos{
         width: 100%;
