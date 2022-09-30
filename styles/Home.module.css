@@ -1,8 +1,5 @@
-/* CSS que vem com o projeto */
- 
 .container {
-  /*padding: 0 2rem;*/
-  background: linear-gradient(90deg, rgba(60,208,224,1) 0%, rgba(0,179,215,0.8449754901960784) 100%);
+  background: linear-gradient(90deg, rgba(1,193,242,1) 0%, rgba(23,143,195,0.9500175070028011) 78%, rgba(1,200,247,1) 100%);
 }
 
 .main {
