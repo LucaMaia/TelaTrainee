@@ -13,7 +13,7 @@ let accordion = [
 export default function PerguntasFrequentes() {
   return (
       <div>
-         <h4 className={styles.titulo_accordion}>
+         <h4 className={styles.titulo_accordion} id="faq">
           Perguntas Frequentes :
         </h4>
                 {accordion.map((item,index) => {

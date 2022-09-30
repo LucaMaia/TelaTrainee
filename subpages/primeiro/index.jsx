@@ -52,7 +52,7 @@ export default function PrimeiroEscopo() {
                 </div>
             </div>
 
-              <div className={styles.astronautas_aprovados}>
+              <div className={styles.astronautas_aprovados} id="aprovados">
                   Astronautas Aprovados
               </div>
 

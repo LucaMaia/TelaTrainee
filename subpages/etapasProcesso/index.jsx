@@ -27,7 +27,7 @@ export default function EtapasProcessoSeletivo() {
                 />
             </div>
 
-                 <div className={styles.titulo_processo_seletivo}>
+                 <div className={styles.titulo_processo_seletivo} id="processo_seletivo">
                      <p>Quais foram as etapas</p>
                      <p>do processo seletivo?</p>
                  </div>

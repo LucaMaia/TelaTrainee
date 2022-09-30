@@ -23,20 +23,20 @@ export default function NavbarComponent(){
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Nav.Link eventKey={1} href="#deets">
+            <Nav.Link eventKey={1} href="https://www.g4f.com.br/">
                 A G4F
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#mees">
-              Perfis
+            <Nav.Link eventKey={2} href="#aprovados">
+              Aprovados
             </Nav.Link>
-            <Nav.Link eventKey={3} href="#m">
+            <Nav.Link eventKey={3} href="#processo_seletivo">
               Etapas do processo seletivo
             </Nav.Link>
-            <Nav.Link eventKey={4} href="#g">
+            <Nav.Link eventKey={4} href="#beneficios">
               Beneficios
             </Nav.Link>
-            <Nav.Link eventKey={5} href="#memes">
-              Depoimentos
+            <Nav.Link eventKey={5} href="#faq">
+              FAQ
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

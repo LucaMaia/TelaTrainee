@@ -17,7 +17,7 @@ let miniCards = [
 export default function Beneficios() {
   return (
       <>
-          <h4 className={styles.titulo}>
+          <h4 className={styles.titulo} id="beneficios">
               Beneficíos
           </h4>
 
