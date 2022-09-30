@@ -44,7 +44,7 @@ export default function EtapasProcessoSeletivo() {
         <div style={{position:"relative"}}> 
                   <div className={styles.alinhamento_imagem_oculos}>
                        <Image
-                            src="/oculos.svg"
+                            src="/oculos.png"
                             width={250}
                             height={150}
                         />

@@ -18,8 +18,9 @@
     color: white;
 	background-color: #2EA3BC;
 	font-weight: bold;
-    width: 35%;
+    width: 30%;
 }
+
 
 .alinhamento_card_processoseletivo{
 	display:flex ;
@@ -95,14 +96,6 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 	height: 60px;
 }
-
-/*.card{*/
-/*	border-radius:20px;*/
-/*	height:150px;*/
-/*	box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 2.6px;*/
-/*	margin: 0 auto;*/
-/*	background:#7a297a;*/
-/*}*/
 
 .title{
 	padding-left:5px;
