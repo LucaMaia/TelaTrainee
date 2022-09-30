@@ -40,11 +40,13 @@ export default function PrimeiroEscopo() {
                   <div className={styles.logo} style={{
                       position:"absolute", 
                       alignItems:"center",
+                      overflow:"",
+                      transform: [{ rotate: '190deg'}]
                     }}>
                   <Image
                       src="/linhas.svg"
                       width={600}
-                      height={400}
+                      height={750}
                     />
                   </div>
                  
