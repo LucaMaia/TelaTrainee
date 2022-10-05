@@ -100,10 +100,16 @@
 
 }
 
+@media (max-width: 1710px) {
+    .sbx{
+        font-size: 45px;
+    }
+}
 
 @media (max-width: 550px) {
     .sbx{
-        font-size: 30px;
+
+   font-size: 30px;
     }
     .alinhamento_cards_candidatos{
         width: 100%;
